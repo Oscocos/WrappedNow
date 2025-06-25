@@ -1,0 +1,15 @@
+{
+  "name": "wrapped_now_client_v2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev-reset": "vite --clearScreen false && echo \"localStorage.clear()\" | pbcopy",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  }
+}

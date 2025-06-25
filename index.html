@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wrapped Now</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <section id="main"></section>
+    <section id="oauth"></section>
+    <section id="top"></section>
+  </main>
+
+  <template id="login">
+    <header>
+      <h1 id="main-title">Wrapped Now</h1>
+    </header>
+    <button id="login-button" data-bind-onclick="loginWithSpotifyClick();">
+      Log in with Spotify
+    </button>
+    <img src="example.png" alt="Wrapped Now branding" style="width: 100%;" />
+  </template>
+
+  <template id="top-template">
+    <section class="top-section">
+      <div class="dropdown">
+        <select id="type-select" class="dropdown-content" aria-label="Select type">
+          <option value="artists">Artists</option>
+          <option value="tracks" selected>Songs</option>
+        </select>
+
+        <select id="time-period-select" class="dropdown-content" aria-label="Select time period">
+          <option value="short_term" selected>1 Month</option>
+          <option value="medium_term">6 Months</option>
+          <option value="long_term">1 Year</option>
+        </select>
+
+        <button id="submit-button" data-bind-onclick="getUserTopCustom();">Submit</button>
+      </div>
+
+      <h2 id="top-header">
+        Your heavy rotation: <span id="time-period-placeholder">_</span>
+      </h2>
+      <button id="logout-button" data-bind-onclick="logoutClick();">Log out</button>
+    </section>
+
+    <div class="container" id="container"></div>
+  </template>
+
+  <template id="oauth-template">
+    <section aria-label="OAuth information">
+      <h2>OAuth Info</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th scope="row">Access token</th>
+            <td data-bind="access_token"></td>
+          </tr>
+          <tr>
+            <th scope="row">Refresh token</th>
+            <td data-bind="refresh_token"></td>
+          </tr>
+          <tr>
+            <th scope="row">Expiration at</th>
+            <td data-bind="expires"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </template>
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
