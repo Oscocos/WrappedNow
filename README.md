@@ -1,61 +1,93 @@
-# Wrapped Now
+# 🎧 Wrapped Now
+
 ![Wrapped Now preview](example.png)
 
-An interactive web app that allows you to see and customize your very own Spotify Wrapped 
-
-
-Top artists and songs over custom time periods from 1 month to 1 year.
+**Wrapped Now** is an interactive web app that shows you your personalized Spotify Wrapped — anytime you want!  
+View your top artists or songs across different time ranges (1 month, 6 months, or 1 year), with clickable cards and Spotify-integrated data.
 
 ---
 
-## Using This Project
+## 🚀 Try It Yourself
 
-You can use this project **as is** right away if you want to explore your own Spotify data 
+You can use this project **as-is** to explore your own Spotify data.
 
-(I would appreciate that! It lets me know cool people are using something I made!)
+💬 _I’d love it if you did! If people are using this, it means something I made is bringing value to someone._
 
-Choose from artists or songs, and from different time periods.
-
-You can click on each card and it will take you to that specific spotify page.
-
-The artists also have a rating 'popularity', that's Spotify's ranking of how popular an artist is.
-
-### Requirements to run locally:
-
-- A modern browser (Chrome, Firefox, Edge, Safari)
-- A local HTTP server to serve the files (e.g., [Vite](https://vitejs.dev/), or `http-server` via npm)
-- If you install the dependencies and run it using something like VS-Code and npm start/run then you can just go to the localhost (:3000, :5173, or whatever)
-- You will be asked to log in, **dont trust me?** that's okay! I don't ever handle or see your password or user, you will be redirected to Spotify and they will handle the rest! (plus it's all local)
-
-### How to run locally:
-
-1. Clone or download the repository.
-2. If using Node.js tools, install dependencies (if any, e.g., with `npm install`).
-3. Start your local server in the project folder (npm run).
-4. Open the browser and go to `http://localhost:5173` (or your local server URL).
-5. Click **Log in with Spotify** and authorize the app.
+Features:
+- View your **top artists or songs**
+- Choose a time range: **1 month**, **6 months**, or **1 year**
+- Click a card to open it directly on Spotify
+- Artist cards show Spotify’s **popularity score**
 
 ---
 
-## Setup & Customization (Optional)
+## 🛠 Requirements
 
-### 1. Create a Spotify Developer Account
+To run the app locally, you’ll need:
 
-- Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications)
-- Log in with your Spotify account (or create one)
-- Create a new app
-- Copy the **Client ID**
+- A modern browser (Chrome, Firefox, Safari, etc.)
+- A local server (e.g., [Vite](https://vitejs.dev/), or `http-server` via npm)
 
-### 2. Configure Redirect URI
+You can run it easily with VS Code + npm:
 
-- In your Spotify app settings, add your redirect URI:
-  - For local development: `http://localhost:5173/callback`
-  - For production, update this accordingly to your deployed URL (e.g., `https://yourdomain.com/callback`)
+```bash
+npm install
+npm run dev
+```
 
-### 3. Update the Client ID & Redirect URI
+Then visit `http://localhost:5173` in your browser.
 
-In the `script.js` file:
+🔐 Don’t worry — you’ll log in **via Spotify**, not through this site.  
+Your credentials are handled securely through Spotify’s own platform.
+
+---
+
+## 🧪 Run Locally – Step-by-Step
+
+1. **Clone or download this repository**
+
+2. **Install dependencies** (if using Node.js tools):
+   ```bash
+   npm install
+   ```
+
+3. **Start the local server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Visit the app**:
+   Go to `http://localhost:5173` (or your server URL)
+
+5. **Log in with Spotify** and authorize the app
+
+---
+
+## ⚙️ Optional: Use Your Own Spotify Credentials
+
+If you want to customize the app or host it yourself:
+
+### 1. Create a Spotify Developer App
+
+- Go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications)
+- Log in and **create a new app**
+- Copy your **Client ID**
+
+### 2. Set a Redirect URI
+
+In your app settings:
+- Add `http://localhost:5173/callback` (or your deployed site’s `/callback` path)
+
+### 3. Update the App
+
+Open `script.js` and replace the default values:
 
 ```js
 const clientId = "YOUR_CLIENT_ID_HERE";
 const redirectUrl = "YOUR_REDIRECT_URI_HERE";
+```
+
+---
+
+Enjoy your Spotify stats on demand ✨  
+Feel free to fork, star ⭐, or contribute!
