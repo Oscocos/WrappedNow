@@ -34,7 +34,6 @@ const timePeriodLabels = {
   long_term: "1 Year"
 };
 
-// Clear all main containers to avoid old content leftover
 function clearContainers() {
   ['main', 'top', 'oauth'].forEach(id => {
     const el = document.getElementById(id);
@@ -55,7 +54,6 @@ async function init() {
       currentToken.clear();
     }
 
-    // Remove the code param from URL without reloading
     const url = new URL(window.location.href);
     url.searchParams.delete("code");
     const updatedUrl = url.search ? url.href : url.href.replace('?', '');
@@ -72,8 +70,8 @@ async function init() {
 }
 
 async function renderUserTop() {
-  const defaultType = 'tracks';       // Songs
-  const defaultPeriod = 'short_term'; // 1 Month
+  const defaultType = 'tracks';       
+  const defaultPeriod = 'short_term'; 
 
   const fetchUrl = `https://api.spotify.com/v1/me/top/${defaultType}?time_range=${defaultPeriod}&limit=50`;
   const response = await fetch(fetchUrl, {
@@ -103,7 +101,6 @@ async function renderUserTop() {
       </div>`;
   }
 
-  // Set time period placeholder text to 1 Month
   const timePeriodPlaceholder = document.getElementById('time-period-placeholder');
   if (timePeriodPlaceholder) {
     timePeriodPlaceholder.textContent = timePeriodLabels[defaultPeriod];

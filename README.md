@@ -1,12 +1,15 @@
 # Wrapped Now
+![Wrapped Now preview](example.png)
 
-An interactive web app that shows your personalized Spotify Wrapped — your top artists and songs over custom time periods from 1 month to 1 year.
+An interactive web app that shows your personalized Spotify Wrapped 
+your top artists and songs over custom time periods from 1 month to 1 year.
 
 ---
 
 ## Using This Project
 
-You can use this project **as is** right away if you want to explore your own Spotify data (I would appreciate that! It lets me know cool people are using something I made!).
+You can use this project **as is** right away if you want to explore your own Spotify data 
+(I would appreciate that! It lets me know cool people are using something I made!)
 
 ### Requirements to run locally:
 
