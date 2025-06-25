@@ -10,6 +10,8 @@ your top artists and songs over custom time periods from 1 month to 1 year.
 
 You can use this project **as is** right away if you want to explore your own Spotify data 
 (I would appreciate that! It lets me know cool people are using something I made!)
+Choose from artists or songs, and from different time periods. You can click on each card and it will take you to the spotify page.
+The artists also have a rating 'popularity', that's Spotify's ranking of how popular and artist is.
 
 ### Requirements to run locally:
 
