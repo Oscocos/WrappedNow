@@ -14,7 +14,9 @@ You can use this project **as-is** to explore your own Spotify data.
 💬 _I’d love it if you did! If people are using this, it means something I made is bringing value to someone._
 
 ⚠️ **Note on Spotify Limitations**:  
-Spotify only allows specific users to access development-mode apps. If you are not allowlisted, you may encounter issues using the live version.
+Spotify only allows specific users to access development-mode apps. Feel free to email me at **olscocos@gmail.com** with your email and I can add you, but it would probably be easier to just setup your own.
+
+If you are not allowlisted, you may encounter issues using the live version.
 
 **To make this work for you**, follow the setup below to use your own Spotify Developer credentials.
 
