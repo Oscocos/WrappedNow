@@ -1,7 +1,7 @@
 # Wrapped Now
 ![Wrapped Now preview](example.png)
 
-An interactive web app that shows your personalized very own Spotify Wrapped 
+An interactive web app that allows you to see and customize your very own Spotify Wrapped 
 
 
 Top artists and songs over custom time periods from 1 month to 1 year.
