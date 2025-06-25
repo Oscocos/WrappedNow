@@ -13,11 +13,10 @@ You can use this project **as-is** to explore your own Spotify data.
 
 💬 _I’d love it if you did! If people are using this, it means something I made is bringing value to someone._
 
-Features:
-- View your **top artists or songs**
-- Choose a time range: **1 month**, **6 months**, or **1 year**
-- Click a card to open it directly on Spotify
-- Artist cards show Spotify’s **popularity score**
+⚠️ **Note on Spotify Limitations**:  
+Spotify only allows specific users to access development-mode apps. If you are not allowlisted, you may encounter issues using the live version.
+
+**To make this work for you**, follow the setup below to use your own Spotify Developer credentials.
 
 ---
 
@@ -63,9 +62,9 @@ Your credentials are handled securely through Spotify’s own platform.
 
 ---
 
-## ⚙️ Optional: Use Your Own Spotify Credentials
+## ⚙️ Use Your Own Spotify Credentials
 
-If you want to customize the app or host it yourself:
+If you'd like to fully customize or deploy the app:
 
 ### 1. Create a Spotify Developer App
 
