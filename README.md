@@ -1,6 +1,6 @@
 # 🎧 Wrapped Now
 
-![Wrapped Now preview](example.png)
+![Wrapped Now preview](demo.gif)
 
 **Wrapped Now** is an interactive web app that shows you your personalized Spotify Wrapped — anytime you want!  
 View your top artists or songs across different time ranges (1 month, 6 months, or 1 year), with clickable cards and Spotify-integrated data.
