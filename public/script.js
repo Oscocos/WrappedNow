@@ -1,5 +1,5 @@
-const clientId = "4f1ebdeecf0c4efc8baa01fd138e5220";
-const redirectUrl = 'http://localhost:5173/callback';
+const clientId = "YOUR_CLIENT_ID_HERE";       /* Something like: 435n4jsdjfj3345aa01fd138e5220 */
+const redirectUrl = 'YOUR_REDIRECT_URL_HERE'; /* Ex: http://localhost:5173/callback */
 
 const authorizationEndpoint = "https://accounts.spotify.com/authorize";
 const tokenEndpoint = "https://accounts.spotify.com/api/token";

@@ -39,7 +39,7 @@ npm install
 npm run dev
 ```
 
-Then visit `http://localhost:5173` in your browser.
+Then visit `http://localhost:5173` (or whatever localhost is launched) in your browser.
 
 🔐 Don’t worry — you’ll log in **via Spotify**, not through this site.  
 Your credentials are handled securely through Spotify’s own platform.
